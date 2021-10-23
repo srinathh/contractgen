@@ -1,0 +1,31 @@
+runtime: go
+api_version: go1
+
+handlers:
+- url: /
+  static_files: www/index.html
+  upload: www/index.html
+  login: required
+  secure: always
+
+- url: /css
+  static_dir: www/css
+  login: required
+  secure: always
+
+- url: /js
+  static_dir: www/js
+  login: required
+  secure: always
+
+- url: /img
+  static_dir: www/img
+  login: required
+  secure: always
+
+- url: /genclientdoc
+  script: _go_app
+  login: required
+  secure: always
+
+

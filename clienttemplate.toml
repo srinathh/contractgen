@@ -1,0 +1,282 @@
+[[Fixed]]
+Text    = "This AGREEMENT is made and entered into on {{.ContractDate}}"
+Options = ["Center", "NormalSpacing"]
+
+[[Fixed]]
+Text    = "BETWEEN"
+Options = ["Center", "NormalSpacing"]
+
+[[Fixed]]
+Text    = "{{.ClientEntityName}}, a Company incorporated under the Companies Act, 1956 with its office at {{.ClientAddress}}"
+Options = ["Center", "NormalSpacing"]
+
+[[Fixed]]
+Text    = "AND"
+Options = ["Center", "NormalSpacing"]
+
+[[Fixed]]
+Text    = "FlexiBees Business Services Private Limited (FlexiBees), a Company incorporated under the Companies Act, 1956 with its office at A-2606, Rustomjee Azziano, Off Eastern Express Highway, Majiwade Junction, Thane 400601."
+Options = ["Center", "NormalSpacing"]
+
+[[Fixed]]
+Text    = "FlexiBees agrees to provide the services of its Consultant {{.ConsultantName}} whom the Client Company has interviewed and found satisfactory for the role of {{.RoleName}}."
+Options = ["NormalSpacing"]
+
+[[Fixed]]
+Text    = "Role description:"
+Options = ["Underline","BeforeOnlySpacing"]
+
+[[Fixed]]
+Text    = "{{.RoleDescription}}"
+Options = [ "AfterOnlySpacing"]
+
+[[Fixed]]
+Text    = "Working arrangement with the above Consultant:"
+Options = ["Underline", "BeforeOnlySpacing"]
+
+[[Fixed]]
+Text    = "The Consultant will perform all work from {{.WorkLocation}} on part-time basis."
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup01"]
+
+[[Fixed]]
+Text    = "The Consultant will work {{.HoursPerDay}} hours a day for {{.DaysPerWeek}} days a week (approximately {{.HoursPerMonth}} hours per month)"
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup01"]
+Tag = "HoursScheduleClause"
+
+[[Fixed]]
+Text    = "The Consultant will report directly to the Client, and for this purpose the Client shall identify the Manager who will be responsible for day-to-day management and motivation of the Consultant."
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup01"]
+Tag = "ClientReportingClause"
+
+[[Fixed]]
+Text    = "Client will enable performance of the Consultant’ role by providing necessary working induction that will include the following / more elements as the Client may deem fit that will enable the Consultant to perform her role fruitfully:"
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup01"]
+Tag = "MainInductionClause"
+
+[[Fixed]]
+Text    = "FlexiBees will enable transference of “Best practices” to manage Work-from-home professionals that may be beneficial to all parties."
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup01"]
+Tag = "BestPractices"
+
+[[Fixed]]
+Text    = "Contract start date: {{.ContractStartDate}}"
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup01"]
+
+[[Fixed]]
+Text    = "Contract end date: {{.ContractEndDate}}"
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup01"]
+Tag = "ContractEndDate"
+
+
+[[ConsultantArrangementTimesheet.Yes]]
+Text    = "The Consultant will login with a remote login solution as provided by the Client to enable tracking of hours worked. At the end of every week, the Consultant will send a summary email to FlexiBees and the Client for the effort hours worked that week."
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup01"]
+
+[[ConsultantArrangementTimesheet.No]]
+Text    = "The Consultant will maintain a timesheet on Google drive that will be shared with the Client (and not with FlexiBees in order to maintain confidentiality of Client work). At the end of every week, the Consultant will send a summary email to FlexiBees and the Client for the effort hours worked that week." 
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup01"]
+
+[[ConsultantArrangementInduction.Standard]]
+Text    = "Company vision, organization, business & product understanding needed for the consulting role"
+Options = ["NumberingLevel2", "NormalSpacing","NumberingGroup01"]
+
+[[ConsultantArrangementInduction.Standard]]
+Text    = "Preferred modes of communication with the reporting manager and frequency of review discussion to feedback on the Consultant’s work"
+Options = ["NumberingLevel2", "NormalSpacing","NumberingGroup01"]
+
+[[ConsultantArrangementInduction.Standard]]
+Text    = "Infrastructure to get started : Email id, access to tools, files etc"
+Options = ["NumberingLevel2", "NormalSpacing","NumberingGroup01"]
+
+[[ConsultantArrangementInduction.Other]]
+Text    = "Resources and company information required to deliver the consulting role."
+Options = ["NumberingLevel2", "NormalSpacing","NumberingGroup01"]
+
+[[ConsultantArrangementInduction.Graphic]]
+Text    = "Company/Brand objective, USP, target audience, the thinking behind the brand name and tagline"
+Options = ["NumberingLevel2", "NormalSpacing","NumberingGroup01"]
+
+[[ConsultantArrangementInduction.Graphic]]
+Text    = "Thinking behind existing brand assets (logo, designs, images, etc) - what works, what does not"
+Options = ["NumberingLevel2", "NormalSpacing","NumberingGroup01"]
+
+[[ConsultantArrangementInduction.Graphic]]
+Text    = "On new assets: What the intended audience needs to think/feel/do when they see the designs"
+Options = ["NumberingLevel2", "NormalSpacing","NumberingGroup01"]
+
+[[ConsultantArrangementInduction.Graphic]]
+Text    = "Design guidelines - what are must-haves and what are definitely should-not-haves for (colors, shapes, motifs, fonts, etc)"
+Options = ["NumberingLevel2", "NormalSpacing","NumberingGroup01"]
+
+[[ConsultantArrangementInduction.Graphic]]
+Text    = "Competition in the space (do you want to look like them? Do not look like them?, etc)"
+Options = ["NumberingLevel2", "NormalSpacing","NumberingGroup01"]
+
+[[ConsultantArrangementInduction.Graphic]]
+Text    = "Sharing of relevant assets like open/high resolution files, fonts, etc"
+Options = ["NumberingLevel2", "NormalSpacing","NumberingGroup01"]
+
+
+[[ConsultantArrangementInduction.Technology]]
+Text    = "Detailed on-boarding, both functional and technical on Product, Solutions and technology"
+Options = ["NumberingLevel2", "NormalSpacing","NumberingGroup01"]
+
+
+[[ConsultantArrangementInduction.Technology]]
+Text    = "Any specific tools, platforms etc that the company uses"
+Options = ["NumberingLevel2", "NormalSpacing","NumberingGroup01"]
+
+
+[[ConsultantArrangementInduction.Marketing]]
+Text    = "Induction on client's existing marketing strategy and implementation including transfer of learnings from the marketing efforts that have been done in the past."
+Options = ["NumberingLevel2", "NormalSpacing","NumberingGroup01"]
+
+[[ConsultantArrangementInduction.Marketing]]
+Text    = "Induction on client's marketing website and any offline and digital marketing tactics and platforms"
+Options = ["NumberingLevel2", "NormalSpacing","NumberingGroup01"]
+
+[[ConsultantArrangementInduction.Marketing]]
+Text    = "Induction and immersion on client's industry, segmentation and target audience of the brand and website"
+Options = ["NumberingLevel2", "NormalSpacing","NumberingGroup01"]
+
+[[ConsultantArrangementInduction.Face2Face]]
+Text    = "The Client and Consultant will agree on face to face induction meeting(s) as required at the beginning of the assignment based on mutual convenience."
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup01"]
+
+[[ConsultantArrangementPaidLeave.WithNationalHolidayClause]]
+Text    = "For this contract period of {{.ContractDuration}} months, the Consultant will be entitled to {{.LeaveDays}} days of paid leave to be taken with prior notice/mutual agreement with Client. In addition they will be entitled to the National/Other Holidays that are normally available to the Client’s team."
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup01"]
+
+[[ConsultantArrangementPaidLeave.WithoutNationalHolidayClause]]
+Text    = "For this contract period of {{.ContractDuration}} months, the Consultant will be entitled to {{.LeaveDays}} days of paid leave to be taken with prior notice/mutual agreement with Client."
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup01"]
+
+[[ConsultantArrangementReimbursement.Travel]]
+Text    = "The Consultant may work out the travel reimbursement for the days that involving work related travel like {{.NatureOfTravel}} on a mutually fair basis with the Client, to be reimbursed directly by the Client to the Consultant, preferably on same day of travel."
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup01"]
+
+[[ConsultantArrangementReimbursement.Phone]]
+Text    = "All phone expenses are to be reimbursed on submission of actual bills through FlexiBees. These will be attached along with the invoice."
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup01"]
+
+[[Fixed]]
+Text    = "Working arrangement with FlexiBees:"
+Options = ["Underline", "NormalSpacing"]
+
+[[Fixed]]
+Text    = "FlexiBees will make itself available for informal feedback and modest interventions where warranted between Client and Consultant."
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup02"]
+
+[[Fixed]]
+Text    = "In case the selected consultant leaves during the Contract duration, FlexiBees will provide a replacement consultant of similar calibre at no additional cost."
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup02"]
+
+[[Fixed]]
+Text    = "Client permits FlexiBees  to issue a “Certificate of Experience” for the services provided  by the Consultant to the Client, and for the use of the Client Company name for this purpose."
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup02"]
+
+[[Fixed]]
+Text    = "Commercial Terms with FlexiBees:"
+Options = ["Underline", "NormalSpacing"]
+Tag = "CommercialTerms"
+
+[[Fixed]]
+Text    = "Other Terms:"
+Options = ["Underline", "NormalSpacing"]
+
+[[Fixed]]
+Text    = "The Client will continue to honour the relationship with FlexiBees and not attempt direct solicitation of any Consultant that FlexiBees may provide for professional purposes either during or after the duration of this contract."
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup04"]
+
+[[Fixed]]
+Text    = "Client will maintain utmost confidentiality of the Terms of this Contract, including commercials between the Client and FlexiBees, and not discuss any aspect of the same with any Consultant, during or after the duration of this contract."
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup04"]
+
+[[Fixed]]
+Text    = "The Client/FlexiBees may terminate this contract after giving 15 days advance notice. Payment needs to be to FlexiBees for actual work done by the Consultant on pro rata basis, in case of Termination"
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup04"]
+
+[[Fixed]]
+Text    = "Client permits FlexiBees to use the Client name, and their Logo for use in their business proposals and pitches of FlexiBees for their further business development"
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup04"]
+
+[[Fixed]]
+Text    = "Once this contract is signed, FlexiBees will sign a back-to-back contract with the selected Consultant and FlexiBees will be responsible for making contractual payments to her for the duration of the contract."
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup04"]
+
+[[Fixed]]
+Text    = ""
+Options = ["NormalSpacing"]
+
+[[Fixed]]
+Text    = "For FlexiBees Business Services Private Limit"
+Options = ["NormalSpacing"]
+
+[[Fixed]]
+Text    = ""
+Options = ["NormalSpacing"]
+
+[[Fixed]]
+Text    = ""
+Options = ["NormalSpacing"]
+    
+[[Fixed]]
+Text    = "Director"
+Options = ["NormalSpacing"]
+
+[[Fixed]]
+Text    = ""
+Options = ["NormalSpacing"]
+
+[[Fixed]]
+Text    = "For {{.ClientEntityName}}"
+Options = ["NormalSpacing"]
+
+[[Commercial.OutputBased]]
+Text    = "For computation of service fees, the Consultant’s output (Output) will be measured in terms of {{.Output}}"
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup03"]
+
+[[Commercial.OutputBased]]
+Text    = "Service Fees payable to FlexiBees on a calendar monthly basis is linked to the said Output as follows:{{.OutputPricingDetails}}"
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup03"]
+
+
+[[Commercial.OutputBased]]
+Text    = "The following key dates will be adhered to, to enable monthly output-based payment by Client to FlexiBees, and consequently from FlexiBees to the Consultant."
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup03"]
+
+[[Commercial.OutputBased]]
+Text    = "1st of the month: The Output needs to be reconciled & agreed between the Client & Consultant"
+Options = ["NumberingLevel2", "NormalSpacing","NumberingGroup03"]
+
+[[Commercial.OutputBased]]
+Text    = "2nd of the month: Client needs to communicate the agreed output to FlexiBees"
+Options = ["NumberingLevel2", "NormalSpacing","NumberingGroup03"]
+
+[[Commercial.OutputBased]]
+Text    = "3rd of the month: FlexiBees will raise invoice on the Client"
+Options = ["NumberingLevel2", "NormalSpacing","NumberingGroup03"]
+
+[[Commercial.OutputBased]]
+Text    = "5th  of the month: Client will make payment to FlexiBees"
+Options = ["NumberingLevel2", "NormalSpacing","NumberingGroup03"]
+
+[[Commercial.Monthly]]
+Text    = "Service Fees payable to FlexiBees on a calendar monthly basis is {{.MonthlyAmount}} INR plus GST"
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup03"]
+
+[[Commercial.Monthly]]
+Text    = "The following key dates will be adhered to, to enable monthly payment by Client to FlexiBees"
+Options = ["NumberingLevel1", "NormalSpacing","NumberingGroup03"]
+
+[[Commercial.Monthly]]
+Text    = "1st of the month: FlexiBees will raise invoice on the Client"
+Options = ["NumberingLevel2", "NormalSpacing","NumberingGroup03"]
+
+[[Commercial.Monthly]]
+Text    = "2nd of the month: Client will make payment to FlexiBees"
+Options = ["NumberingLevel2", "NormalSpacing","NumberingGroup03"]
+
+[[Commercial.Hours]]
+Text    = ""
+Options = ["NormalSpacing"]

@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <title>Hello, world!</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="py-5 text-center">
+                <img class="d-block mx-auto mb-4" src="img/flexibees-logo.png">
+                <h3>Client Contract Generator</h3>
+            </div>
+            <form action="/genclientdoc" method="post">
+                <div class="row">
+                    <div class="col">
+                        <h3>Client Details</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-7 form-group">
+                        <label for="ClientEntityName">Client Entity Name</label>
+                        <input name="ClientEntityName" required id="ClientEntityName" type="text" class="form-control"  placeholder="Eg. XYZ Company Private Ltd.">
+                        <small class="form-text text-muted">
+                            Enter the full legal entity name of the client company that will be entering into the contract with us 
+                        </small>
+                    </div>
+                            
+                    <div class="col-5 form-group">
+                        <label for="ContractDate">Contract Agreement date</label>
+                        <input name="ContractDate" required id="ContractDate" type="date" class="form-control" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col form-group">
+                        <label for="ClientAddress">Client Address</label>
+                        <input name="ClientAddress" required id="ClientAddress" type="text" class="form-control"  placeholder="Eg. 10-11 ABC Building, 12 DEF Street, GHI Locality, Mumbai, India 400001">
+                        <small class="form-text text-muted">
+                            Enter the address of the client legal entity in a single line without any breaks
+                        </small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h3>Role</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 form-group">
+                        <label for="RoleName">Name of the Role</label>
+                        <input name="RoleName" required id="RoleName" type="text" class="form-control" placeholder="Eg. Equity Analysis Consultant">
+                    </div>
+                    <div class="col-6 form-group">
+                        <label for="WorkLocation">Part-time work location</label>
+                        <select name="WorkLocation" class="form-control" id="WorkLocation" required>
+                            <option>Home</option>
+                            <option>Office</option>
+                        </select>
+                    </div>
+                            
+                </div>
+                <div class="row">
+                    <div class="col form-group">
+                        <label for="RoleDescription">Role Description</label>
+                        <textarea name="RoleDescription" required id="RoleDescription" class="form-control"  rows="5"></textarea>
+                        <small class="form-text text-muted">
+                            Here you can type a detailed role description spanning multiple lines
+                        </small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h3>Consultant Staffing</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col form-group">
+                        <label for="ConsultantName">Consultant Name</label>
+                        <input name="ConsultantName" required id="ConsultantName" type="text" class="form-control"  placeholder="Eg. Deepa Narayanaswamy">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 form-group">
+                        <label for="HoursPerDay">Hours per day</label>
+                        <select name="HoursPerDay" class="form-control" id="HoursPerDay" required>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                          </select>
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="DaysPerWeek">Days per week</label>
+                        <select name="DaysPerWeek" class="form-control" id="DaysPerWeek" required>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                          </select>
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="HoursPerMonth">Approx. hours per month</label>
+                        <input name="HoursPerMonth" id="HoursPerMonth" type="text" class="form-control" placeholder="Eg. 60-70">
+                        <small class="form-text text-muted">
+                          Leave blank unless specifically agreed with client.
+                        </small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h3>Contracting Period</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 form-group">
+                        <label for="ContractStartDate">Contract Start date</label>
+                        <input name="ContractStartDate" required id="ContractStartDate" type="date" class="form-control" />
+                    </div>
+                    <div class="col-6 form-group">
+                        <label for="ContractDuration">Contract duration in months</label>
+                        <select name="ContractDuration" class="form-control" id="ContractDuration" required>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 form-group">
+                        <label for="LeavesPerMonth">Paid leave days per month</label>
+                        <select name="LeavesPerMonth" class="form-control" id="LeavesPerMonth" required>
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="NationalHolidayClause">National Holidays additional</label>
+                        <select name="NationalHolidayClause" class="form-control" id="NationalHolidayClause" required>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="ClientTimesheet">Use Client Timesheet tool?</label>
+                        <select name="ClientTimesheet" class="form-control" id="ClientTimesheet" required>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h3>Re-imbursements</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 form-group">
+                        <label for="TravelReimbursement">Require Travel Reimbursement?</label>
+                        <select name="TravelReimbursement" class="form-control" id="TravelReimbursement" required onchange="natureOfTravelVisible(this.value)">
+                            <option>Yes</option>
+                            <option selected>No</option>
+                        </select>
+                    </div>
+                    <div class="col-6 form-group">
+                        <label for="PhoneReimbursement">Require Telephone Reimbursement?</label>
+                        <select name="PhoneReimbursement" class="form-control" id="PhoneReimbursement" required>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                    </div>
+                </div>                
+                <div class="row" id="NatureOfTravelBlock">
+                    <div class="col form-group">
+                        <label for="NatureOfTravel">Nature of Travel</label>
+                        <input name="NatureOfTravel" id="NatureOfTravel" type="text" class="form-control"  placeholder="Eg. client office, customer meetings">
+                        <small class="form-text text-muted">
+                            If travel Re-imbursements are required, enter the nature of travel(s) required separated by commas
+                        </small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h3>Induction</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 form-group">
+                        <label for="InductionVertical">Induction Vertical</label>
+                        <select name="InductionVertical" class="form-control" id="InductionVertical" required>
+                            <option>Graphic</option>
+                            <option>Technology</option>
+                            <option>Marketing</option>
+                            <option>Other</option>
+                        </select>
+                        <small class="form-text text-muted">
+                            Industry vertical for specific induction clauses
+                        </small>
+                    </div>
+                    <div class="col-6 form-group">
+                        <label for="InductionF2F">Face to Face Induction</label>
+                        <select name="InductionF2F" class="form-control" id="InductionF2F" required>
+                            <option>Required</option>
+                            <option>Not Required</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h3>Commercials</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col form-group">
+                        <label for="ContractType">Type of Contract Commercials</label>
+                        <select name="ContractType" class="form-control" id="ContractType" required onchange="contractTypeVisibility(this.value)">
+                            <option selected>OutputBased</option>
+                            <option>Monthly</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="OutputBasedSection" class="row">
+                    <div class="col-4 form-group">
+                        <label for="Output">Output Name</label>
+                        <input name="Output" id="Output" type="text" class="form-control"  placeholder="client prospect calls setup">
+                        <small class="form-text text-muted">
+                            What is the nature of the output we are pricing for?
+                        </small>
+                    </div>
+                    <div class="col-8 form-group">
+                        <label for="OutputPricingDetails">Output Pricing Details</label>
+                        <input name="OutputPricingDetails" id="OutputPricingDetails" type="text" class="form-control" />
+                        <small class="form-text text-muted">
+                            Enter the calculation details for output pricing
+                        </small>
+                    </div>
+                </div>
+                <div id="MonthlySection" class="row">
+                    <div class="col form-group">
+                        <label for="MonthlyAmount">Monthly Amount</label>
+                        <input name="MonthlyAmount" id="MonthlyAmount" type="number" class="form-control">
+                        <small class="form-text text-muted">
+                            What is our pricing per month in INR? Enter only the number
+                        </small>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script>
+            jQuery(function($) {
+
+                        $("#MonthlySection").hide();
+                        $("#OutputBasedSection").show();
+                        $("#NatureOfTravelBlock").hide();
+            });
+            function natureOfTravelVisible(value){
+                if(value==="Yes")
+                    $("#NatureOfTravelBlock").show();
+                else
+                    $("#NatureOfTravelBlock").hide();
+            }
+            function contractTypeVisibility(value){
+                switch(value){
+                    case "Monthly":
+                        $("#MonthlySection").show();
+                        $("#OutputBasedSection").hide();
+                        break
+                    case "OutputBased":
+                        $("#MonthlySection").hide();
+                        $("#OutputBasedSection").show();
+                        break
+                    default:
+                        alert("error in contract type")
+                }
+            }
+        </script>
+    </body>
+</html>
